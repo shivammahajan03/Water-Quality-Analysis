@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-water_dataset = pd.read_csv("/content/water_potability.csv")
+water_dataset = pd.read_csv("Water Quality Analysis/water_potability.csv")
 
 # Display the first few rows of the DataFrame
 
