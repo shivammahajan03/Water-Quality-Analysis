@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/shiva/Desktop/IITJ/MLOps/Water%20Quality%20Analysis/mlruns/711005503524254312/537989428cf5486ea7ce77c22289f16b/artifacts
+end_time: 1719142681703
+entry_point_name: ''
+experiment_id: '711005503524254312'
+lifecycle_stage: active
+run_id: 537989428cf5486ea7ce77c22289f16b
+run_name: selective-calf-651
+run_uuid: 537989428cf5486ea7ce77c22289f16b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719142665891
+status: 3
+tags: []
+user_id: shiva
