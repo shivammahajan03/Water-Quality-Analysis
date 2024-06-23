@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/shiva/Desktop/IITJ/MLOps/Water%20Quality%20Analysis/mlruns/711005503524254312/50c437551f98491a91a54be4cfc2eeed/artifacts
+end_time: 1719147190771
+entry_point_name: ''
+experiment_id: '711005503524254312'
+lifecycle_stage: active
+run_id: 50c437551f98491a91a54be4cfc2eeed
+run_name: gifted-gull-137
+run_uuid: 50c437551f98491a91a54be4cfc2eeed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719147177263
+status: 3
+tags: []
+user_id: shiva

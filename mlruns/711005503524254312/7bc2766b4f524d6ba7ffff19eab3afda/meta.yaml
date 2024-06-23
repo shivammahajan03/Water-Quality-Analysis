@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/shiva/Desktop/IITJ/MLOps/Water%20Quality%20Analysis/mlruns/711005503524254312/7bc2766b4f524d6ba7ffff19eab3afda/artifacts
+end_time: 1719146130565
+entry_point_name: ''
+experiment_id: '711005503524254312'
+lifecycle_stage: active
+run_id: 7bc2766b4f524d6ba7ffff19eab3afda
+run_name: capricious-whale-934
+run_uuid: 7bc2766b4f524d6ba7ffff19eab3afda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719146117839
+status: 3
+tags: []
+user_id: shiva

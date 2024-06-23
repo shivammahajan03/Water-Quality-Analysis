@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib
 
-matplotlib.use('Agg')  # Use 'Qt5Agg' for interactive plots
+matplotlib.use('TkAgg') 
 
 # Load the dataset
 water_dataset = pd.read_csv("water_potability.csv")
@@ -78,12 +78,13 @@ print(water_dataset_clean.shape)
 # Histograms of all columns
 water_dataset_clean.hist(figsize=(15, 10), bins=20)
 plt.suptitle("Histograms of all columns")
-plt.show()
+plt.savefig("histograms_all.png")
+plt.close()
 
 # Box plots to check for outliers
 water_dataset_clean.plot(kind='box', subplots=True, layout=(4, 3), figsize=(15, 10), sharex=False, sharey=False)
-plt.suptitle("Box plots of all columns")
-plt.show()
+plt.savefig("box_plot_all.png")
+plt.close()
 
 # Correlation matrix
 corr_matrix = water_dataset_clean.corr()
@@ -95,13 +96,15 @@ print(corr_matrix)
 plt.figure(figsize=(12, 8))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
 plt.title("Heatmap of the Correlation Matrix")
-plt.show()
+plt.savefig("heatmap_correlation.png")
+plt.close()
 
 # Scatter plots to understand relationships
 
 sns.pairplot(water_dataset_clean, diag_kind='kde')
 plt.suptitle("Pairplot of all columns", y=1.02)
-plt.show()
+plt.savefig("pair_plots.png")
+plt.close()
 
 # MODEL IMPLEMENTATION
 
@@ -142,9 +145,9 @@ with mlflow.start_run():
     y_pred_lasso = lasso_model.predict(X_test)
 
     # Log parameters and metrics for Ridge Regression
-    mlflow.log_param("lasso_alpha", 1.0)
+    mlflow.log_param("lasso_alpha", 0.1)
     mlflow.log_metric("lasso_rmse", np.sqrt(mean_squared_error(y_test, y_pred_lasso)))
-    mlflow.log_metric("ridge_r2", r2_score(y_test, y_pred_ridge))
+    mlflow.log_metric("lasso_r2", r2_score(y_test, y_pred_lasso))
 
     # Log the lasso model
     mlflow.sklearn.log_model(lasso_model, "lasso_model")
