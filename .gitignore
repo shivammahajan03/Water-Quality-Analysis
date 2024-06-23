@@ -1,2 +1,7 @@
 ﻿requirements.txt
 water_potability.csv
+assignment_1.py
+*.png
+*.pdf
+MLflow.html
+mlruns.zip
